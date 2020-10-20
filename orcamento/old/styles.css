@@ -1,0 +1,443 @@
+body {
+  background: #33cc33;
+  font-family: sans-serif;
+}
+body fieldset.fieldset, body .btn {
+  -webkit-box-shadow: 0 8px 10px #29a329;
+  box-shadow: 0 8px 10px #29a329;
+}
+
+body.error {
+  background: #f04000;
+}
+body.error fieldset.fieldset {
+  -webkit-box-shadow: 0 8px 10px #bd3200;
+  box-shadow: 0 8px 10px #bd3200;
+}
+
+h1, h2 {
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%); */
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  /* top: 27px; */
+  margin-top: -70px;
+  color: #33cc33;
+  font-size: 2em;
+}
+
+h2 {
+  /* top: 54px; */
+  color: #33cc33;
+  font-size: 1.5em;
+  opacity: 0.7;
+}
+
+ul.items {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 50%;
+  left: -60px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+ul.items li {
+  width: 8px;
+  height: 8px;
+  margin: 10px 0;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.4;
+  cursor: pointer;
+}
+ul.items li.active {
+  opacity: 1;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  top: calc(120px + 50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+form fieldset.fieldset {
+  background: white;
+  height: 60px;
+}
+form fieldset{
+  position: absolute;
+  width: 300px;
+  border-radius: 3px;
+  opacity: 0;
+  -webkit-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+          transform: scale(0.2);
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+form fieldset input, form fieldset p {
+  display: inline-block;
+  width: 200px;
+  margin-left: 50px;
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+form fieldset p {
+  margin-top: 22px;
+  text-align: center;
+}
+form fieldset input {
+  height: 40px;
+  margin-top: 8px;
+  border: none;
+  outline: none;
+}
+form fieldset .icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+form fieldset .icon i {
+  position: absolute;
+  display: block;
+}
+form fieldset .icon i::before, form fieldset .icon i::after {
+  position: absolute;
+  content: "";
+}
+form fieldset .icon.left {
+  left: 10px;
+}
+form fieldset .icon.right {
+  right: 10px;
+  cursor: pointer;
+}
+form fieldset .icon.button:hover {
+  background: #f2f2f2;
+  border-radius: 3px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+form fieldset .btn {
+  padding: 20px 10px 20px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: white;
+  margin-top: 10px;
+}
+form fieldset .btn:hover {
+  background: #f2f2f2;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+form fieldset.enable {
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-out 0.2s;
+  -o-transition: all 0.5s ease-out 0.2s;
+  transition: all 0.5s ease-out 0.2s;
+  -webkit-transition-property: all;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: enable 0.5s ease-out 0.2s;
+          animation: enable 0.5s ease-out 0.2s;
+}
+form fieldset.disable {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transform: translateY(120px) scale(0.9);
+      -ms-transform: translateY(120px) scale(0.9);
+          transform: translateY(120px) scale(0.9);
+}
+body.error fieldset {
+  -webkit-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-animation: error 0.3s ease-out;
+          animation: error 0.3s ease-out;
+}
+
+@-webkit-keyframes enable {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes enable {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes error {
+  0%, 50%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  75% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+}
+@keyframes error {
+  0%, 50%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  75% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+}
+/**
+ * Icons in CSS, long as f****
+ */
+.icon .arrow {
+  width: 2px;
+  height: 17px;
+  top: 5px;
+  left: 14px;
+  background: #333333;
+}
+.icon .arrow::before {
+  width: 6px;
+  height: 6px;
+  bottom: -1px;
+  left: -3px;
+  border-color: #333333;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.icon .user {
+  width: 20px;
+  height: 10px;
+  bottom: 5px;
+  left: 5px;
+  -webkit-box-shadow: 0 0 0 2px #333333 inset;
+          box-shadow: 0 0 0 2px #333333 inset;
+  border-radius: 6px 6px 3px 3px;
+}
+.icon .user::before {
+  width: 10px;
+  height: 10px;
+  top: -9px;
+  left: 5px;
+  -webkit-box-shadow: 0 0 0 2px #333333 inset;
+          box-shadow: 0 0 0 2px #333333 inset;
+  border-radius: 50%;
+}
+.icon .letter {
+  width: 20px;
+  height: 12px;
+  top: 9px;
+  left: 5px;
+  -webkit-box-shadow: 0 0 0 2px #333333 inset;
+          box-shadow: 0 0 0 2px #333333 inset;
+  border-radius: 3px;
+}
+.icon .letter::before, .icon .letter::after {
+  width: 11px;
+  height: 2px;
+  top: 4px;
+  background: #333333;
+}
+.icon .letter::before {
+  left: 0;
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+.icon .letter::after {
+  right: 0;
+  -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.icon .lock {
+  width: 20px;
+  height: 16px;
+  top: 9px;
+  left: 5px;
+  -webkit-box-shadow: 0 0 0 2px #333333 inset;
+          box-shadow: 0 0 0 2px #333333 inset;
+  border-radius: 3px;
+}
+.icon .lock::before {
+  width: 8px;
+  height: 8px;
+  top: -4px;
+  left: 4px;
+  border: 2px solid transparent;
+  border-top: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icon .lock::after {
+  width: 6px;
+  height: 7px;
+  top: 4px;
+  left: 7px;
+  -webkit-box-shadow: 0 0 0 2px #333333 inset;
+          box-shadow: 0 0 0 2px #333333 inset;
+}
+
+.icon .heart {
+  width: 10px;
+  height: 10px;
+  top: 11px;
+  left: 7px;
+  background: #ff5233;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.icon .heart::before, .icon .heart::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5233;
+}
+.icon .heart::before {
+  left: -6px;
+}
+.icon .heart::after {
+  top: -6px;
+}
+
+
+
+
+
+
+
+
+.br-header{
+  /* height: 100px; */
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* padding-bottom: 25px; */
+}
+
+.br-header .br-right{
+  width: 100vw;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.br-header .br-left{
+  width: 100px;
+}
+
+.br-splitter{
+  width: 100vw;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-image: url('../estrada.png');
+  height: 90px;
+  margin-bottom: -20px;
+}
+.br-question{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn{
+  position: relative;
+}
+.btn .icon{
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+}
+.btn .icon2{
+  display: inline-block;
+  position: absolute;
+  right: 45px;
+}

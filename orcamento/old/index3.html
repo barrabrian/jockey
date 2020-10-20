@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt" >
+<head>
+  <meta charset="utf-8">
+  <title>Orçamento Online | Autoescola Cantu</title>
+  <meta name="description" content="Centro de Formação de Condutores em Foz do Iguaçu.">
+  <meta property="og:url" content="http://autoescolacantu.com.br/" />
+  <meta name="og:title" property="og:title" content="Orçamento Online | Autoescola Cantu">
+  <meta name="og:description" property="og:description" content="Centro de Formação de Condutores em Foz do Iguaçu.">
+  <meta name="og:image" property="og:image" content="http://autoescolacantu.com.br/logo.png">
+  <meta name="robots" content="index, follow">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<!--PEN HEADER-->
+<div class="br-header">
+  <center>
+    <img src="../logo.png" style="margin-top: -55px;" width="250px" alt="Autoescola Cantu em Foz do Iguaçu">
+    <h1>Orçamento</h1>
+    <h2>Online</h2>
+  </center>
+  <div class="br-splitter"></div>
+</div>
+<!--PEN CONTENT     -->
+<div class="content mb-4"><br><br>
+  <!--content inner-->
+  <div class="content__inner">
+    <div class="container overflow-hidden">
+      <!--multisteps-form-->
+      <div class="multisteps-form">
+        <!--progress bar-->
+        <div class="row">
+          <div class="col-6 col-lg-2 ml-auto mr-auto mb-4">
+            <div class="multisteps-form__progress">
+              <button class="multisteps-form__progress-btn js-active" type="button" title="User Info"></button>
+              <button class="multisteps-form__progress-btn" type="button" title="Address"></button>
+              <button class="multisteps-form__progress-btn" type="button" title="Order Info"></button>
+              <button class="multisteps-form__progress-btn" type="button" title="Comments"></button>
+            </div>
+          </div>
+        </div>
+        <!--form panels-->
+        <div class="row">
+          <div class="col-12 col-lg-4 m-auto">
+            <form class="multisteps-form__form">
+              <!--single form panel-->
+              <div class="multisteps-form__panel p-2 rounded  js-active " data-animation="scaleIn">
+                <h3 class="multisteps-form__title">Vamos começar?</h3>
+                <div class="multisteps-form__content">
+                  <div class="form-row mt-4">
+                    <div class="col-12 col-sm-12">
+                      <input class="multisteps-form__input form-control shadow" id="nome" type="text" placeholder="Digite seu nome"/>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-2">
+                      <input class="multisteps-form__input form-control shadow" id="telefone" type="tel" placeholder="DDD + Celular"/>
+                    </div>
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-primary ml-auto js-btn-next shadow w-100" type="button" title="Next">></button>
+                  </div>
+                </div>
+              </div>
+              <!--single form panel-->
+              <div class="multisteps-form__panel  p-2 rounded " data-animation="scaleIn">
+                <h3 class="multisteps-form__title">Qual produto?</h3>
+                <div class="multisteps-form__content">
+                  <div class="row">
+                    <div class="col-12 mt-1">
+                      <div class="col-12 col-sm-12 mt-2 pl-0 pr-0">
+                        <select class="select-css" id="prod">
+                        	<option>1˚ CNH</option>
+                        	<option>Inclusão de Categoria</option>
+                        	<option>Segunda Via de CNH</option>
+                        	<option>PID (Permissão)</option>
+                        	<option>EAR</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <div class="col-6 pl-0">
+                      <button class="btn btn-primary js-btn-prev shadow w-100 " type="button" title="Prev"><</button>
+                    </div>
+                    <div class="col-6 pr-0">
+                      <button class="btn btn-primary ml-auto js-btn-next shadow w-100" type="button" title="Next">></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--single form panel-->
+              <div class="multisteps-form__panel p-2 rounded " data-animation="scaleIn">
+                <h3 class="multisteps-form__title">1˚ CNH</h3>
+                <div class="multisteps-form__content">
+                  <div class="row">
+                    <div class="col-6 mt-2">
+                      <label class="card shadow-sm" for="cnh-a" style="">
+                        <div class="card-body">
+                          <img src="../moto.png" class="icon2" width="50px" alt="Autoescola Cantu em Foz do Iguaçu">
+                          <input class="d-inline" style="position: absolute;right: 1.25rem; margin-top: 16px;" type="radio" id="cnh-a" name="cnh" value="A" checked/>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="col-6 mt-2">
+                      <label class="card shadow-sm" for="cnh-b" style="">
+                        <div class="card-body">
+                          <img src="../car.png" class="icon2" width="50px" alt="Autoescola Cantu em Foz do Iguaçu">
+                          <input class="d-inline" style="position: absolute;right: 1.25rem; margin-top: 16px;" type="radio" id="cnh-b" name="cnh" value="B" />
+                        </div>
+                      </label>
+                    </div>
+                    <div class="col-12 mt-2">
+                      <label class="card shadow-sm" for="cnh-ab" style="">
+                        <div class="card-body">
+                          <img src="../car.png" class="icon2" width="50px" alt="Autoescola Cantu em Foz do Iguaçu">
+                          <img src="../moto.png" class="icon2" width="50px" alt="Autoescola Cantu em Foz do Iguaçu">
+                          <input class="d-inline" style="position: absolute;right: 1.25rem; margin-top: 16px;" type="radio" id="cnh-ab" name="cnh" value="AB" />
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <div class="col-6 pl-0">
+                      <button class="btn btn-primary js-btn-prev shadow w-100 " type="button" title="Prev"><</button>
+                    </div>
+                    <div class="col-6 pr-0">
+                      <button class="btn btn-primary ml-auto js-btn-next shadow w-100" type="button" title="Next">></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--single form panel-->
+              <div class="multisteps-form__panel p-2 rounded " data-animation="scaleIn">
+                <h3 class="multisteps-form__title">Inclusão de Categoria</h3>
+                <div class="multisteps-form__content">
+                  <div class="row">
+                    <div class="col-6 mt-2">
+                      <label class="card shadow-sm" for="add-a" style="">
+                        <div class="card-body">
+                          <img src="../moto.png" class="icon2" width="50px" alt="Autoescola Cantu em Foz do Iguaçu">
+                          <input class="d-inline" style="position: absolute;right: 1.25rem; margin-top: 16px;" type="radio" id="add-a" name="add" value="A" checked/>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="col-6 mt-2">
+                      <label class="card shadow-sm" for="add-b" style="">
+                        <div class="card-body">
+                          <img src="../car.png" class="icon2" width="50px" alt="Autoescola Cantu em Foz do Iguaçu">
+                          <input class="d-inline" style="position: absolute;right: 1.25rem; margin-top: 16px;" type="radio" id="add-b" name="add" value="B" />
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <div class="col-6 pl-0">
+                      <button class="btn btn-primary js-btn-prev shadow w-100 " type="button" title="Prev"><</button>
+                    </div>
+                    <div class="col-6 pr-0">
+                      <button class="btn btn-primary ml-auto js-btn-next shadow w-100" type="button" title="Next">></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--single form panel-->
+              <div class="multisteps-form__panel" data-animation="scaleIn">
+                <h3 class="multisteps-form__title">Additional Comments</h3>
+                <div class="multisteps-form__content p-4 shadow rounded bg-white">
+                  <div class="form-row">
+                    <textarea class="multisteps-form__textarea form-control shadow" placeholder="Additional Comments and Requirements"></textarea>
+                  </div>
+                  <div class="button-row d-flex mt-4">
+                    <button class="btn btn-success w-100" type="button" title="Send">></button>
+                  </div>
+                </div>
+                <div class="button-row d-flex mt-4">
+                  <button class="btn btn-primary js-btn-prev" type="button" title="Prev"><</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+<script  src="../script.js"></script>
+
+</body>
+</html>
